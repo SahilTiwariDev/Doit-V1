@@ -553,3 +553,76 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+
+.flex {
+  display: flex;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.bg-light-sage {
+  --tw-bg-opacity: 1;
+  background-color: rgb(207 225 185 / var(--tw-bg-opacity));
+}
+
+.bg-mint-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 245 219 / var(--tw-bg-opacity));
+}
+
+.bg-forest-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 131 85 / var(--tw-bg-opacity));
+}
+
+.bg-sage-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(181 201 154 / var(--tw-bg-opacity));
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-mint-green {
+  --tw-text-opacity: 1;
+  color: rgb(233 245 219 / var(--tw-text-opacity));
+}
