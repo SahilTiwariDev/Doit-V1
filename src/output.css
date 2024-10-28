@@ -618,6 +618,10 @@ video {
   height: 3.5rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .max-h-max {
   max-height: -moz-max-content;
   max-height: max-content;
@@ -697,6 +701,14 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .overflow-hidden {
