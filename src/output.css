@@ -614,6 +614,10 @@ video {
   height: 0.25rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .max-h-max {
   max-height: -moz-max-content;
   max-height: max-content;
