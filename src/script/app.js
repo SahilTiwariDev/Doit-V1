@@ -127,3 +127,14 @@ completedButton.addEventListener("mouseover", () => {
 completedButton.addEventListener("mouseleave", () => {
   completedIcon.classList.remove("hidden");
 });
+
+let addTaskButton = document.getElementById("addtaskButton"); // Add-task-button
+let addTaskIcon = document.getElementById("addTaskIcon"); // Add-task-icon
+
+addTaskButton.addEventListener("mouseover", () => {
+  addTaskIcon.classList.add("hidden");
+});
+
+addTaskButton.addEventListener("mouseleave", () => {
+  addTaskIcon.classList.remove("hidden");
+});
