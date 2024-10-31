@@ -93,3 +93,37 @@ document.getElementById("addtaskButton").onclick = () => {
   document.getElementById("container").appendChild(newTask);
   document.getElementById("container").appendChild(horizontalLine);
 };
+
+// Hide-SVG-on-hover
+
+let todayButton = document.getElementById("today-button"); // Today-button
+let todayIcon = document.getElementById("today-icon"); // Today-icon
+
+todayButton.addEventListener("mouseover", () => {
+  todayIcon.classList.add("hidden");
+});
+todayButton.addEventListener("mouseleave", () => {
+  todayIcon.classList.remove("hidden");
+});
+
+let tomorrowButton = document.getElementById("tomorrow-button"); // Tomorrow-button
+let tomorrowIcon = document.getElementById("tomorrow-icon"); // Tomorrow-icon
+
+tomorrowButton.addEventListener("mouseover", () => {
+  tomorrowIcon.classList.add("hidden");
+});
+
+tomorrowButton.addEventListener("mouseleave", () => {
+  tomorrowIcon.classList.remove("hidden");
+});
+
+let completedButton = document.getElementById("completed-button"); // Completed-button
+let completedIcon = document.getElementById("completed-icon"); // Completed-icon
+
+completedButton.addEventListener("mouseover", () => {
+  completedIcon.classList.add("hidden");
+});
+
+completedButton.addEventListener("mouseleave", () => {
+  completedIcon.classList.remove("hidden");
+});
