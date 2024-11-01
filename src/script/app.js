@@ -138,3 +138,18 @@ addTaskButton.addEventListener("mouseover", () => {
 addTaskButton.addEventListener("mouseleave", () => {
   addTaskIcon.classList.remove("hidden");
 });
+
+//  Drop-down-button
+
+let moreActionButton = document.getElementById("accountButton"); // Account-name-button
+let accountSVG = document.getElementById("accountLogo"); //  Account-SVG
+
+moreActionButton.addEventListener("mouseover", () => {
+  moreActionButton.innerText = `More`;
+  accountSVG.classList.add("hidden");
+});
+
+moreActionButton.addEventListener("mouseleave", () => {
+  moreActionButton.innerHTML = `Sahil`;
+  accountSVG.classList.remove("hidden");
+});
