@@ -142,14 +142,15 @@ addTaskButton.addEventListener("mouseleave", () => {
 //  Drop-down-button
 
 let moreActionButton = document.getElementById("accountButton"); // Account-name-button
-let accountSVG = document.getElementById("accountLogo"); //  Account-SVG
+let accountSVG = document.getElementById("accountLogo"); // Account-SVG
+let accountUser = document.getElementById("username");
 
 moreActionButton.addEventListener("mouseover", () => {
-  moreActionButton.innerText = `More`;
-  accountSVG.classList.add("hidden");
+  accountSVG.classList.add("hidden"); // Hide SVG on hover
+  accountUser.innerText = "More";
 });
 
 moreActionButton.addEventListener("mouseleave", () => {
-  moreActionButton.innerHTML = `Sahil`;
-  accountSVG.classList.remove("hidden");
+  accountSVG.classList.remove("hidden"); // Add back SVG
+  accountUser.innerText = "Sahil";
 });
