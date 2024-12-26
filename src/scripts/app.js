@@ -8,6 +8,7 @@ function addTask(name, description) {
   let taskbody = document.createElement("div");
   let taskFront = document.createElement("p");
   let taskBackt = document.createElement("p");
+  taskbody.setAttribute("class", "flex");
   taskFront.innerHTML = name.value;
   taskBackt.innerHTML = description.value;
   taskbody.appendChild(taskFront);

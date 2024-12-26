@@ -6,7 +6,9 @@
     <title>Document</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="h-screen bg-[url('assets/vivid-blurred-colorful-background.jpg')] bg-cover bg-center">
+  <body
+    class="h-screen bg-[url('assets/vivid-blurred-colorful-background.jpg')] bg-cover bg-center"
+  >
     <header>
       <img
         class="h-12 w-12 rounded-full"
@@ -15,23 +17,47 @@
       />
     </header>
     <main class="flex w-full justify-center items-center p-20">
-      <div id="taskArea" class="h-96 w-9/12 bg-white rounded-2xl shadow-xl flex flex-col">
-        <div class="flex justify-evenly">
+      <div
+        id="taskArea"
+        class="h-96 w-9/12 bg-white rounded-2xl shadow-xl flex flex-col p-5"
+      >
+        <div class="flex justify-evenly p-5">
           <input
-            class="h-10 w-4/5"
+            class="text-center h-10 w-2/5 rounded-xl border-2 border-purple-300"
             id="taskName"
             type="text"
-            placeholder="Provide a description of task"
+            placeholder="Add a catchy task title..."
           />
-          <input type="text" id="taskDescription">
-          <button id="addButton">Add</button>
+          <input
+            class="text-center h-10 w-2/5 rounded-xl border-2 border-purple-300"
+            type="text"
+            id="taskDescription"
+            placeholder="Why is this task important?"
+          />
+          <button
+            id="addButton"
+            class="h-10 w-32 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
+          >
+            Add
+          </button>
         </div>
         <div class="flex justify-evenly">
-          <button>All tasks</button>
-          <button>Completed tasks</button>
-          <button>Unfinished tasks</button>
+          <button
+            class="h-10 w-44 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
+          >
+            All tasks
+          </button>
+          <button
+            class="h-10 w-44 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
+          >
+            Completed tasks
+          </button>
+          <button
+            class="h-10 w-44 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
+          >
+            Unfinished tasks
+          </button>
         </div>
-        <hr />
         <div id="displayArea"></div>
       </div>
     </main>
