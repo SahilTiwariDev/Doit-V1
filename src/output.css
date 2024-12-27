@@ -591,6 +591,14 @@ video {
   height: 2rem;
 }
 
+.h-0\.5 {
+  height: 0.125rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -617,6 +625,15 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .flex-col {
@@ -716,6 +733,11 @@ video {
 .bg-blue-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(96 165 250 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 51 234 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\'assets\/vivid-blurred-colorful-background\.jpg\'\)\] {
