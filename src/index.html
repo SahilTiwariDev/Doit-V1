@@ -9,12 +9,23 @@
   <body
     class="h-screen bg-[url('assets/vivid-blurred-colorful-background.jpg')] bg-cover bg-center"
   >
-    <header class="h-24">
-      <img
-        class="h-12 w-12 rounded-full"
-        src="./assets/my_image.jpg"
-        alt="image(Sahil Tiwari)"
-      />
+    <header class="flex justify-between">
+      <div class="p-6">
+        <a href="https://github.com/SahilTiwariDev">
+          <img
+            class="h-12 w-12 rounded-full"
+            src="./assets/my_image.jpg"
+            alt="image(Sahil Tiwari)"
+        /></a>
+      </div>
+      <div class="p-6">
+        <button
+          class="h-12 w-32 text-white text-lg rounded-lg bg-blue-400 hover:scale-110 duration-300 hover:shadow-lg"
+        >
+          Log In
+        </button>
+        <button></button>
+      </div>
     </header>
     <main class="flex flex-col w-full justify-center items-center gap-5">
       <div
@@ -36,40 +47,48 @@
           />
           <button
             id="addButton"
-            class="h-10 w-32 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
+            class="h-10 w-32 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
           >
             Add
           </button>
         </div>
       </div>
-      <div class="h-96 w-9/12 bg-white rounded-2xl shadow-xl flex flex-col p-5">
+      <div
+        class="h-96 w-9/12 bg-white rounded-2xl shadow-xl flex flex-col p-5 gap-5"
+      >
         <div class="flex justify-evenly">
-          <button
-            class="h-10 w-52 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
-          >
-            All tasks
-          </button>
-          <button
-            class="h-10 w-52 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
-          >
-            Completed tasks
-          </button>
-          <button
-            class="h-10 w-52 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
-          >
-            Unfinished tasks
-          </button>
+          <div>
+            <button
+              class="h-10 w-52 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
+            >
+              All tasks
+            </button>
+          </div>
+          <div>
+            <button
+              class="h-10 w-52 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
+            >
+              Completed tasks
+            </button>
+          </div>
+          <div>
+            <button
+              class="h-10 w-52 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
+            >
+              Unfinished tasks
+            </button>
+          </div>
         </div>
         <div id="displayArea"></div>
       </div>
     </main>
     <footer class="flex flex-col justify-center bottom-0 absolute w-full">
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-center p-5 gap-1">
         <p class="text-center">Stay in touch with me on these networks.</p>
-        <div class="flex space-x-4">
+        <div class="flex space-x-10">
           <a href="mailto:sahiltiwari.contactme@gmail.com" target="_blank">
             <img
-              class="h-12 w-12 rounded-full"
+              class="h-8 w-8 rounded-full"
               src="./assets/email.png"
               alt="Email"
             />
@@ -80,7 +99,7 @@
             rel="noopener noreferrer"
           >
             <img
-              class="h-12 w-12 rounded-full"
+              class="h-8 w-8 rounded-full"
               src="./assets/github_logo.png"
               alt="GitHub"
             />
@@ -91,7 +110,7 @@
             rel="noopener noreferrer"
           >
             <img
-              class="h-12 w-12 rounded-full"
+              class="h-8 w-8 rounded-full"
               src="./assets/linkedin_logo_png.png"
               alt="LinkedIn"
             />
