@@ -9,17 +9,17 @@
   <body
     class="h-screen bg-[url('assets/vivid-blurred-colorful-background.jpg')] bg-cover bg-center"
   >
-    <header>
+    <header class="h-24">
       <img
         class="h-12 w-12 rounded-full"
         src="./assets/my_image.jpg"
         alt="image(Sahil Tiwari)"
       />
     </header>
-    <main class="flex w-full justify-center items-center p-20">
+    <main class="flex flex-col w-full justify-center items-center gap-5">
       <div
         id="taskArea"
-        class="h-96 w-9/12 bg-white rounded-2xl shadow-xl flex flex-col p-5"
+        class="h-fit w-9/12 bg-white rounded-2xl shadow-xl flex flex-col"
       >
         <div class="flex justify-evenly p-5">
           <input
@@ -36,24 +36,26 @@
           />
           <button
             id="addButton"
-            class="h-10 w-32 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
+            class="h-10 w-32 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
           >
             Add
           </button>
         </div>
+      </div>
+      <div class="h-96 w-9/12 bg-white rounded-2xl shadow-xl flex flex-col p-5">
         <div class="flex justify-evenly">
           <button
-            class="h-10 w-44 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
+            class="h-10 w-52 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
           >
             All tasks
           </button>
           <button
-            class="h-10 w-44 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
+            class="h-10 w-52 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
           >
             Completed tasks
           </button>
           <button
-            class="h-10 w-44 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
+            class="h-10 w-52 text-white rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
           >
             Unfinished tasks
           </button>
