@@ -10,21 +10,24 @@
     class="h-screen bg-[url('assets/vivid-blurred-colorful-background.jpg')] bg-cover bg-center"
   >
     <div
-    id="popUpBox"
+      id="popUpBox"
       class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50"
     >
-      <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-        <p class="text-center text-gray-800 text-lg font-semibold">
+      <div
+        class="bg-white p-6 rounded-lg shadow-lg h-36 w-96 flex flex-col items-center justify-between"
+      >
+        <p class="text-center">
           Please enter a task description.
         </p>
         <button
-        id="closePopUpButton"
-          class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 w-full"
+          id="closePopUpButton"
+          class="h-10 w-2/4 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
         >
           Close
         </button>
       </div>
     </div>
+
     <header class="flex justify-between">
       <div class="p-6">
         <a href="https://github.com/SahilTiwariDev">
