@@ -3,6 +3,7 @@
 let nameOfTask = document.getElementById("taskName");
 let descriptionOfTask = document.getElementById("taskDescription");
 let taskArea = document.getElementById("displayArea");
+let noTaskText = document.getElementById("epmtyTaskText");
 
 function addTask(name, description) {
   if (description.value === "") {
@@ -17,12 +18,15 @@ function addTask(name, description) {
     let taskbody = document.createElement("div");
     let taskFront = document.createElement("p");
     let taskBackt = document.createElement("p");
-    taskbody.setAttribute("class", "flex");
+    taskbody.classList.add("flex");
     taskFront.innerHTML = name.value;
     taskBackt.innerHTML = description.value;
     taskbody.appendChild(taskFront);
     taskbody.appendChild(taskBackt);
     taskArea.appendChild(taskbody);
+    noTaskText.classList.remove("flex");
+    noTaskText.classList.add("hidden");
+    taskArea.classList.remove('flex', 'justify-center')
   }
 }
 

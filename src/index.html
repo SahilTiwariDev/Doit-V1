@@ -16,9 +16,7 @@
       <div
         class="bg-white p-6 rounded-lg shadow-lg h-36 w-96 flex flex-col items-center justify-between"
       >
-        <p class="text-center">
-          Please enter a task description.
-        </p>
+        <p class="text-center">Please enter a task description.</p>
         <button
           id="closePopUpButton"
           class="h-10 w-2/4 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
@@ -43,7 +41,6 @@
         >
           Log In
         </button>
-        <button></button>
       </div>
     </header>
     <main class="flex flex-col w-full justify-center items-center gap-5">
@@ -101,9 +98,11 @@
         <div
           class="h-0.5 w-full bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
         ></div>
-        <div id="displayArea" class="flex justify-center items-center">
-          Looks like you don't have any tasks yet! Start adding to get things
-          moving.
+        <div id="displayArea" class="flex justify-center">
+          <p id="epmtyTaskText" class="flex">
+            Looks like you don't have any tasks yet! Start adding to get things
+            moving.
+          </p>
         </div>
       </div>
     </main>
