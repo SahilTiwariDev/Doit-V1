@@ -43,15 +43,18 @@
     </div>
     <div
       id="editTaskPopUpBox"
-      class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50"
+      class="hidden fixed inset-0 bg-black bg-opacity-50  items-center justify-center z-50"
     >
       <div
-        class="bg-white p-6 rounded-lg shadow-lg h-36 w-96 flex flex-col items-center justify-between"
+        class="bg-white p-6 rounded-lg shadow-lg w-11/12 max-w-md flex flex-col items-center gap-6"
       >
-        <p id="descriptionField" class="text-center"></p>
+        <p
+          id="descriptionField"
+          class="text-center text-gray-700 p-4 border border-gray-300 rounded-md bg-gray-100 max-h-48 max-w-md overflow-y-auto w-full "
+        ></p>
         <button
           id="closeeditTaskPopUpBoxButton"
-          class="h-10 w-2/4 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
+          class="h-10 w-32 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
         >
           Close
         </button>
