@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Link to Tailwind CSS -->
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body
     class="h-screen bg-[url('assets/vivid-blurred-colorful-background.jpg')] bg-cover bg-center"
   >
+    <!-- Main Pop-up Box -->
     <div
       id="popUpBox"
       class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50"
@@ -25,25 +27,11 @@
         </button>
       </div>
     </div>
-    <div
-      id="popUpBox"
-      class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50"
-    >
-      <div
-        class="bg-white p-6 rounded-lg shadow-lg h-36 w-96 flex flex-col items-center justify-between"
-      >
-        <p class="text-center">Please enter a task description.</p>
-        <button
-          id="closePopUpButton"
-          class="h-10 w-2/4 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
-        >
-          Close
-        </button>
-      </div>
-    </div>
+
+    <!-- Edit Task Pop-up Box -->
     <div
       id="editTaskPopUpBox"
-      class="hidden fixed inset-0 bg-black bg-opacity-50  items-center justify-center z-50"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50"
     >
       <div
         class="bg-white p-6 rounded-lg shadow-lg w-11/12 max-w-md flex flex-col items-center gap-6"
@@ -61,16 +49,66 @@
       </div>
     </div>
 
+    <!-- Another Edit Task Pop-up Box (Duplicate of above, remove or merge) -->
+    <div
+      id="editTaskPopUpBox"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+    >
+      <div
+        class="bg-white p-6 rounded-lg shadow-lg max-w-2xl flex flex-col items-center gap-6"
+      >
+        <!-- Task Name -->
+        <p
+          id="taskNameField"
+          class="text-center text-gray-700 p-4 border border-gray-300 rounded-md bg-gray-100 max-h-16 w-full overflow-y-auto font-semibold"
+        >
+          Task Name Here
+        </p>
+
+        <!-- Task Description -->
+        <p
+          id="taskDescriptionField"
+          class="text-center text-gray-600 p-4 border border-gray-300 rounded-md bg-gray-100 max-h-32 w-full overflow-y-auto"
+        >
+          Task description will be displayed here.
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-wrap justify-center gap-4 w-full">
+          <button
+            id="closeeditTaskPopUpBoxButton"
+            class="h-10 w-32 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
+          >
+            Close
+          </button>
+          <button
+            class="h-10 w-32 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
+          >
+            Save
+          </button>
+          <button
+            class="h-10 w-32 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
+          >
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Section -->
     <header class="flex justify-between">
       <div class="p-6">
+        <!-- Link to GitHub Profile -->
         <a href="https://github.com/SahilTiwariDev">
           <img
             class="h-12 w-12 rounded-full"
             src="./assets/my_image.jpg"
             alt="image(Sahil Tiwari)"
-        /></a>
+          />
+        </a>
       </div>
       <div class="p-6">
+        <!-- Log In Button -->
         <button
           class="h-12 w-32 text-white text-lg rounded-lg bg-blue-400 hover:scale-110 duration-300 hover:shadow-lg"
         >
@@ -78,24 +116,29 @@
         </button>
       </div>
     </header>
+
+    <!-- Main Content Section -->
     <main class="flex flex-col w-full justify-center items-center gap-5">
       <div
         id="taskArea"
         class="h-fit w-9/12 bg-white rounded-2xl shadow-xl flex flex-col"
       >
         <div class="flex justify-evenly p-5">
+          <!-- Task Name Input Field -->
           <input
             class="text-center h-10 w-2/5 rounded-xl border-2 border-purple-300"
             id="taskName"
             type="text"
             placeholder="Add a catchy task title..."
           />
+          <!-- Task Description Input Field -->
           <input
             class="text-center h-10 w-2/5 rounded-xl border-2 border-purple-300"
             type="text"
             id="taskDescription"
             placeholder="Why is this task important?"
           />
+          <!-- Add Button -->
           <button
             id="addButton"
             class="h-10 w-32 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
@@ -104,10 +147,13 @@
           </button>
         </div>
       </div>
+
+      <!-- Task Filter Buttons -->
       <div
         class="h-96 w-9/12 bg-white rounded-2xl shadow-xl flex flex-col p-5 gap-5"
       >
         <div class="flex justify-evenly">
+          <!-- All Tasks Button -->
           <div>
             <button
               class="h-10 w-52 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
@@ -115,6 +161,7 @@
               All tasks
             </button>
           </div>
+          <!-- Completed Tasks Button -->
           <div>
             <button
               class="h-10 w-52 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
@@ -122,6 +169,7 @@
               Completed tasks
             </button>
           </div>
+          <!-- Unfinished Tasks Button -->
           <div>
             <button
               class="h-10 w-52 text-white text-lg rounded-lg bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:scale-110 duration-300 hover:shadow-lg"
@@ -130,9 +178,13 @@
             </button>
           </div>
         </div>
+
+        <!-- Divider Line -->
         <div
           class="h-0.5 w-full bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
         ></div>
+
+        <!-- Display Area for Tasks -->
         <div id="displayArea" class="flex justify-center">
           <p id="epmtyTaskText" class="flex">
             Looks like you don't have any tasks yet! Start adding to get things
@@ -141,10 +193,13 @@
         </div>
       </div>
     </main>
+
+    <!-- Footer Section -->
     <footer class="flex flex-col justify-center bottom-0 absolute w-full">
       <div class="flex flex-col items-center justify-center p-5 gap-1">
         <p class="text-center">Great connections start here—find me online:</p>
         <div class="flex space-x-10">
+          <!-- Email Icon -->
           <a href="mailto:sahiltiwari.contactme@gmail.com" target="_blank">
             <img
               class="h-8 w-8 rounded-full"
@@ -152,6 +207,7 @@
               alt="Email"
             />
           </a>
+          <!-- GitHub Icon -->
           <a
             href="https://github.com/SahilTiwariDev"
             target="_blank"
@@ -163,6 +219,7 @@
               alt="GitHub"
             />
           </a>
+          <!-- LinkedIn Icon -->
           <a
             href="https://www.linkedin.com/in/sahil-tiwari-dev?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6oyVcsGsTDmomTpUIAJ6lw%3D%3D"
             target="_blank"
@@ -175,12 +232,15 @@
             />
           </a>
         </div>
+        <!-- Footer Text -->
         <p class="text-center">
           Doit-V1 - Get things done, your way. Developed by Sahil. © 2024 All
           rights reserved.
         </p>
       </div>
     </footer>
+
+    <!-- Link to External JavaScript File -->
     <script src="./scripts/app.js"></script>
   </body>
 </html>
